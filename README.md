@@ -1,5 +1,1 @@
-# Subgraph for Arbitrum One block data
-
-##
-
-[Subgraph Endpoint]()
+# Subgraph for ethereum block data

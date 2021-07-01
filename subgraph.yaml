@@ -1,12 +1,12 @@
 specVersion: 0.0.2
-description: Indexing all Arbitrum One Block data
+description: Indexing all Block data for ethereum based networks
 repository: https://github.com/blocklytics/ethereum-blocks
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: ConverterRegistryContract
-    network: arbitrum-one
+    network: optimism-kovan
     source:
       address: '0x0ddff327ddf7fe838e3e63d02001ef23ad1ede8e'
       abi: ConverterRegistryContract
