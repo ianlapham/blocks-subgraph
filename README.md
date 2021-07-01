@@ -1,4 +1,4 @@
-# Subgraph for Arbitrum One block data
+# Subgraph for Ethereum block data
 
 This subgraph indexes all block data on the [Arbitrum One mainnet beta network](https://offchain.medium.com/introducing-arbitrum-one-our-mainet-beta-ed0e9b63b435). 
 
