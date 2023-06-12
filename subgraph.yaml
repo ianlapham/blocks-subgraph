@@ -1,15 +1,16 @@
 specVersion: 0.0.2
-description: Indexing all Arbitrum One Block data
-repository: https://github.com/blocklytics/ethereum-blocks
+description: Indexing all Avalanche Block data
+repository: https://github.com/lynnshaoyu/blocks-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: ConverterRegistryContract
-    network: arbitrum-one
+    network: avalanche
     source:
-      address: '0x0ddff327ddf7fe838e3e63d02001ef23ad1ede8e'
-      abi: ConverterRegistryContract
+      address: '0xF9d922c055A3f1759299467dAfaFdf43BE844f7a'
+      abi: Minereum
+      startBlock: 27832971
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -17,8 +18,8 @@ dataSources:
       entities:
         - ConverterAddition
       abis:
-        - name: ConverterRegistryContract
-          file: ./abis/ConverterRegistryContract.json
+        - name: Minereum
+          file: ./abis/Minereum.json
       blockHandlers:
         - handler: handleBlock
       file: ./src/mappings/blocks.ts
